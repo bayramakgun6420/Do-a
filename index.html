@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--Bootstrap style-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!--HEADER-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><h2>DOĞA</h2></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/"
+                >Anasayfa</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/blok.html">Blok</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="/sign.html">Giriş Yap</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Arama Yapınız"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">Ara</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--Ana İçerik-->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/banner1.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Bize Katıl</h5>
+            <a class="btn btn-success" href="/sign.html">Şimdi Kaydol</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/banner2.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block"></div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/banner3.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block"></div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--İkonlar/Bilgi Alanı-->
+    <div class="container px-4 py-5">
+      <h2 class="border-bottom pb-4 mb-4">Neler Göreceksiniz ?</h2>
+      <div class="row row-cols-1 row-cols-lg-3 g-3">
+        <div class="col d-flex gap-3">
+          <img src="/images/bookmark.png" width="50px" height="50px" />
+          <div>
+            <h3 class="fs-2">Seyehat Rehberleri</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              corrupti corporis qui rem aliquid modi voluptatum soluta quos
+              pariatur rerum quibusdam, enim, mollitia molestiae? Quidem nostrum
+              quos eum ea consectetur.
+            </p>
+            <a class="btn btn-primary" href="#">Devamını Oku</a>
+          </div>
+        </div>
+        <div class="col d-flex gap-3">
+          <img src="/images/location.png" width="50px" height="50px" />
+          <div>
+            <h3 class="fs-2">Doğa Yürüyüşleri</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              corrupti corporis qui rem aliquid modi voluptatum soluta quos
+              pariatur rerum quibusdam, enim, mollitia molestiae? Quidem nostrum
+              quos eum ea consectetur.
+            </p>
+            <a class="btn btn-primary" href="#">Devamını Oku</a>
+          </div>
+        </div>
+        <div class="col d-flex gap-3">
+          <img src="/images/Chat.png" width="50px" height="50px" />
+          <div>
+            <h3 class="fs-2">Doğa Fotoğrafçılığı</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              corrupti corporis qui rem aliquid modi voluptatum soluta quos
+              pariatur rerum quibusdam, enim, mollitia molestiae? Quidem nostrum
+              quos eum ea consectetur.
+            </p>
+            <a class="btn btn-primary" href="#">Devamını Oku</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Bilgilendirme Kutucukları-->
+    <div class="container my-5">
+      <div class="p-5 mb-4 bg-light rounded">
+        <h3 class="fw-bold">Sürdürülebilir Seyehat</h3>
+        <p class="fs-4 col-md-8">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum
+          aliquid suscipit illo obcaecati ipsa qui delectus, blanditiis quo iste
+          cupiditate.
+        </p>
+        <button class="btn btn-primary btn-lg">İlerle</button>
+      </div>
+      <div class="row">
+        <!--Sütunlar-->
+        <div class="col-md-6">
+          <div class="p-5 text-bg-dark rounded-3">
+            <h2>Doğal Sağlık ve Refah</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Repudiandae tenetur aperiam sint dolores inventore molestias
+              commodi nemo iste voluptate ipsam.
+            </p>
+            <button class="btn btn-outline-light">İlerle</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-5 bg-light rounded-3">
+            <h2>Doğal Sağlık ve Refah</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Repudiandae tenetur aperiam sint dolores inventore molestias
+              commodi nemo iste voluptate ipsam.
+            </p>
+            <button class="btn btn-outline-secondary">İlerle</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Ana İçerik-->
+    <div class="container my-5">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
+        <!--Sütun-->
+        <div class="col">
+          <div class="card">
+            <div
+              style="
+                background: url(/images/dogal.jpg);
+                height: 250px;
+                background-size: cover;
+                background-position: center;
+              "
+            ></div>
+            <div class="card-body">
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellat ullam voluptate alias velit ducimus corrupti itaque
+                nisi, placeat hic ad!
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button class="btn btn-outline-secondary btn-sm">
+                    Göster
+                  </button>
+                  <button class="btn btn-outline-secondary btn-sm">
+                    Düzenle
+                  </button>
+                </div>
+                <small>6min</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Sütun-->
+        <!--Sütun-->
+        <div class="col">
+          <div class="card">
+            <div
+              style="
+                background: url(/images/beslenme.jpg);
+                height: 250px;
+                background-size: cover;
+                background-position: center;
+              "
+            ></div>
+            <div class="card-body">
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellat ullam voluptate alias velit ducimus corrupti itaque
+                nisi, placeat hic ad!
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button class="btn btn-outline-secondary btn-sm">
+                    Göster
+                  </button>
+                  <button class="btn btn-outline-secondary btn-sm">
+                    Düzenle
+                  </button>
+                </div>
+                <small>9min</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Sütun-->
+        <!--Sütun-->
+        <div class="col">
+          <div class="card">
+            <div
+              style="
+                background: url(/images/karavan.jpg);
+                height: 250px;
+                background-size: cover;
+                background-position: center;
+              "
+            ></div>
+            <div class="card-body">
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellat ullam voluptate alias velit ducimus corrupti itaque
+                nisi, placeat hic ad!
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button class="btn btn-outline-secondary btn-sm">
+                    Göster
+                  </button>
+                  <button class="btn btn-outline-secondary btn-sm">
+                    Düzenle
+                  </button>
+                </div>
+                <small>18min</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Sütun-->
+        <!--Sütun-->
+        <div class="col">
+          <div class="card">
+            <div
+              style="
+                background: url(/images/dogal.jpg);
+                height: 250px;
+                background-size: cover;
+                background-position: center;
+              "
+            ></div>
+            <div class="card-body">
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellat ullam voluptate alias velit ducimus corrupti itaque
+                nisi, placeat hic ad!
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button class="btn btn-outline-secondary btn-sm">
+                    Göster
+                  </button>
+                  <button class="btn btn-outline-secondary btn-sm">
+                    Düzenle
+                  </button>
+                </div>
+                <small>6min</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Sütun-->
+        <!--Sütun-->
+        <div class="col">
+          <div class="card">
+            <div
+              style="
+                background: url(/images/beslenme.jpg);
+                height: 250px;
+                background-size: cover;
+                background-position: center;
+              "
+            ></div>
+            <div class="card-body">
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellat ullam voluptate alias velit ducimus corrupti itaque
+                nisi, placeat hic ad!
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button class="btn btn-outline-secondary btn-sm">
+                    Göster
+                  </button>
+                  <button class="btn btn-outline-secondary btn-sm">
+                    Düzenle
+                  </button>
+                </div>
+                <small>9min</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Sütun-->
+        <!--Sütun-->
+        <div class="col">
+          <div class="card">
+            <div
+              style="
+                background: url(/images/karavan.jpg);
+                height: 250px;
+                background-size: cover;
+                background-position: center;
+              "
+            ></div>
+            <div class="card-body">
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellat ullam voluptate alias velit ducimus corrupti itaque
+                nisi, placeat hic ad!
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button class="btn btn-outline-secondary btn-sm">
+                    Göster
+                  </button>
+                  <button class="btn btn-outline-secondary btn-sm">
+                    Düzenle
+                  </button>
+                </div>
+                <small>18min</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Sütun-->
+        <!--Sütun-->
+        <div class="col">
+          <div class="card">
+            <div
+              style="
+                background: url(/images/dogal.jpg);
+                height: 250px;
+                background-size: cover;
+                background-position: center;
+              "
+            ></div>
+            <div class="card-body">
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellat ullam voluptate alias velit ducimus corrupti itaque
+                nisi, placeat hic ad!
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button class="btn btn-outline-secondary btn-sm">
+                    Göster
+                  </button>
+                  <button class="btn btn-outline-secondary btn-sm">
+                    Düzenle
+                  </button>
+                </div>
+                <small>6min</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Sütun-->
+        <!--Sütun-->
+        <div class="col">
+          <div class="card">
+            <div
+              style="
+                background: url(/images/beslenme.jpg);
+                height: 250px;
+                background-size: cover;
+                background-position: center;
+              "
+            ></div>
+            <div class="card-body">
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellat ullam voluptate alias velit ducimus corrupti itaque
+                nisi, placeat hic ad!
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button class="btn btn-outline-secondary btn-sm">
+                    Göster
+                  </button>
+                  <button class="btn btn-outline-secondary btn-sm">
+                    Düzenle
+                  </button>
+                </div>
+                <small>9min</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Sütun-->
+        <!--Sütun-->
+        <div class="col">
+          <div class="card">
+            <div
+              style="
+                background: url(/images/karavan.jpg);
+                height: 250px;
+                background-size: cover;
+                background-position: center;
+              "
+            ></div>
+            <div class="card-body">
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellat ullam voluptate alias velit ducimus corrupti itaque
+                nisi, placeat hic ad!
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button class="btn btn-outline-secondary btn-sm">
+                    Göster
+                  </button>
+                  <button class="btn btn-outline-secondary btn-sm">
+                    Düzenle
+                  </button>
+                </div>
+                <small>18min</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Sütun-->
+      </div>
+    </div>
+
+    <!--Footer-->
+    <div class="container">
+      <footer class="d-flex justify-content-between border-top my-5 pt-3">
+        <p>
+          &copy; 2023 Bütün hakları <span>BayramAkgün</span> tarafından saklıdır
+        </p>
+        <div class="d-flex gap-3">
+          <a class="nav-link" href="/">Anasayfa</a>
+          <a class="nav-link" href="/blog.html">Blog</a>
+          <a class="nav-link" href="/sign.html">Giriş Yap</a>
+        </div>
+      </footer>
+    </div>
+
+    <!--Bootstrap JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+  </body>
+</html>
